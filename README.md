@@ -47,14 +47,14 @@ sudo firewall-cmd --permanent --add-port=7500/tcp
 # 重启防火墙
 sudo firewall-cmd --reload
 ```
-"""
+
 防火墙监听 https://blog.csdn.net/weixin_43922901/article/details/109261700
 a. 如果是ubuntu或者centos 6，请使用ufw/iptables工具放行端口；
 b. 7000和7500两个端口分别对应frps.ini配置中的bind_port和dashboard_port
 
 如果出现监听防火墙出现问题 https://jingyan.baidu.com/article/5552ef47f509bd518ffbc933.html
 http://47.93.53.193:7500/ 访问服务端后台地址
-"""
+
 ------------------------------------------------------------------------------------------------------
 
 # 客户端
@@ -89,10 +89,10 @@ local_port = 8080
 subdomain = test.hijk.pw
 remote_port = 自定义的远程服务器端口，例如8080
 ```
-"""
+
 注意：[ssh]这样的名称必须全局唯一，即就算有多个客户端，也只能使用一次，其他的可以用[ssh2]、[ssh3]等；
 意思就是说，如果你要配置多个客户端，必须将另外的客户端的[ssh]改为[ssh2]、[ssh3]等，并且remote_port也要变，比如6002，6003等
-"""
+
 * 防火墙监听,同样，如果没有开启防火墙可以不用一下操作
 ```
 sudo firewall-cmd --permanent --add-port=6000/tcp
