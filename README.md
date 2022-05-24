@@ -1,9 +1,15 @@
-<!-- 服务端 -->
 [frp官方文档](https://gofrp.org/docs/)
+
+* 解压文件
+```
 tar -zxvf frp_0.33.0_linux_amd64.tar.gz
-# 修改服务端配置文件
+```
+* 修改服务端配置文件
+```
 vi frps.ini
-"""
+```
+* 添加内容
+```
 [common]
 # frp监听的端口，默认是7000，可以改成其他的
 bind_port = 7000
@@ -16,6 +22,9 @@ dashboard_port = 7500
 dashboard_user = admin
 dashboard_pwd = admin
 enable_prometheus = true
+```
+## 服务端
+"""
 
 # frp日志配置
 log_file = /var/log/frps.log
