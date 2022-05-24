@@ -1,5 +1,5 @@
 <!-- 服务端 -->
-frp官方文档[https://gofrp.org/docs/]
+[frp官方文档](https://gofrp.org/docs/)
 tar -zxvf frp_0.33.0_linux_amd64.tar.gz
 # 修改服务端配置文件
 vi frps.ini
